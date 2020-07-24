@@ -32,6 +32,7 @@ ipv6_api="api6.ipify.org"    #备用ipv6 api：ipv6.icanhazip.com，api6.ipify.o
 ```
 **必填区是必须要填写的**
 以要动态解析”photos.google.com“这个域名为例，zone_name填写`google.com`,record_name填写`photos，google.com`更改完成后，保存退出。
+
 **选填区是可填可不填的**
 选填区是`网络`解析ip所用到api，你可以找一个你认为快的api填写上去，让解析速度变得更快。
 
