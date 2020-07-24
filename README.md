@@ -45,6 +45,3 @@ bash /home/ddns/Cloudflare_ddns.sh     #目录根据实际用户等进行更改
 ```
 **感谢**:本脚本参考 [wherelse的树莓派IPV6 DDNS解决方案](https://github.com/wherelse/cloudflare-ddns-script) 
 
-
-```
-
