@@ -5,6 +5,7 @@ Cloudflare的动态域名解析脚本支持v4和v6
 
 ### 使用方法
 1.在Cloudflare添加你要解析的DDNS域名，不添加脚本会找不到你要添加的域名
+
 2.打开命令窗口，下载脚本：
 ```shell
 wget https://github.com/xiaoduola99/Cloudflare_ddns/releases/download/v1.0/Cloudflare_ddns.sh
