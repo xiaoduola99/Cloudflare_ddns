@@ -1,6 +1,7 @@
 # Cloudflare_ddns
 Cloudflare的动态域名解析脚本支持v4和v6
-##[Cloudflare的Global API Key获取链接](https://dash.cloudflare.com/profile/api-tokens) 
+
+#[Cloudflare的Global API Key获取链接](https://dash.cloudflare.com/profile/api-tokens) 
 
 ### 使用方法
 1.在Cloudflare添加你要解析的DDNS域名，不添加脚本会找不到你要添加的域名
