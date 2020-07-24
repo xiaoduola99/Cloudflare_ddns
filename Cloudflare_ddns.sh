@@ -12,7 +12,7 @@ ip_index="local"     #internet 或 local,通过网络获取 或 本地网卡获�
 ####################################################################################
 ipv4_api="ipv4.icanhazip.com"     #备用ipv4 api：ipv4.icanhazip.com，api.ipify.org
 ipv6_api="api6.ipify.org"    #备用ipv6 api：ipv6.icanhazip.com，api6.ipify.org
-#信息选填区
+#信息选填区     网络获取ip地址的api
 ####################################################################################
 ip_file="ip.txt"                       #保存ip地址信息
 id_file="cloudflare_ddns.ids"          #保存主域名和需要解析域名的ID
