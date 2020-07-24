@@ -1,12 +1,15 @@
 # Cloudflare_ddns
 Cloudflare的动态域名解析脚本支持v4和v6
+##[Cloudflare的Global API Key获取链接](https://dash.cloudflare.com/profile/api-tokens) 
+
 ### 使用方法
-1.打开命令窗口，下载脚本：
+1.在Cloudflare添加你要解析的DDNS域名，不添加脚本会找不到你要添加的域名
+2.打开命令窗口，下载脚本：
 ```shell
 wget https://github.com/xiaoduola99/Cloudflare_ddns/releases/download/v1.0/Cloudflare_ddns.sh
 sudo chmod 775 /home/ddns/Cloudflare_ddns.sh       #目录根据实际用户等进行更改
 ```
-2.对脚本内的个人配置信息进行更改，目录记得和上一条命令保持一致。
+3.对脚本内的个人配置信息进行更改，目录记得和上一条命令保持一致。
 ```shell
 sudo vi /home/ddns/Cloudflare_ddns.sh     #目录根据实际用户等进行更改
 ```
@@ -31,11 +34,11 @@ ipv6_api="api6.ipify.org"    #备用ipv6 api：ipv6.icanhazip.com，api6.ipify.o
 选填区是`网络`解析ip所用到api，你可以找一个你认为快的api填写上去，让解析速度变得更快。
 
 
-在命令行中输入以下内容运行脚本：
+4.在命令行中输入以下内容运行脚本：
 ```shell
 bash /home/ddns/Cloudflare_ddns.sh     #目录根据实际用户等进行更改
 ```
-**定时运行脚本**
+5.**定时运行脚本**
 为了能一直解析新的ip，必须让脚本每隔几分钟运行一下，所以使用系统的定时任务来让脚本自动运行，输入`crontab -e`进入系统定时任务。
 ```
 */5 * * * *  /home/ddns/Cloudflare_ddns.sh >/dev/null 2>&1    #目录根据实际用户等进行更改
