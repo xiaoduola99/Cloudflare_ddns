@@ -32,7 +32,7 @@ ipv6_api="api6.ipify.org"    #备用ipv6 api：ipv6.icanhazip.com，api6.ipify.o
 选填区是`网络`解析ip所用到api，你可以找一个你认为快的api填写上去，让解析速度变得更快。
 
 
-在命令行中输入以下内容运行脚本：
+在命令行中输入以下内容运行脚本即可解析：
 ```shell
 bash /home/ddns/Cloudflare_ddns.sh
 ```
