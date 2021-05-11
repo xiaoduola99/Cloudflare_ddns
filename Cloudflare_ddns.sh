@@ -7,7 +7,7 @@ auth_key="652p4q8x8jk6fmeoazvxrzkptzdd729q"   #你的CloudFlare账户Globel ID
 zone_name="google.com"     #你的主域名
 record_name="photos.google.com"    #你需要的完整的DDNS解析域名
 record_type="AAAA"             #A或AAAA及ipv4或ipv6解析
-proxied_flag = "true" #是否启动代理
+proxied_flag="true" #是否启动代理
 ip_index="local"     #internet 或 local,通过网络获取 或 本地网卡获取ip
 #信息必填区
 ####################################################################################
