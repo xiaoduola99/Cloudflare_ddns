@@ -104,7 +104,7 @@ if [ -f $ip_file ]; then
     fi
 fi
 #更新DNS记录
-update=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$zone_identifier/dns_records/$record_identifier" -H "X-Auth-Email: $auth_email" -H "X-Auth-Key: $auth_key" -H "Content-Type: application/json" --data "{\"type\":\"$record_type\",\"name\":\"$record_name\",\"content\":\"$ip\",\"ttl\":120,\"proxied\":\"$proxied_flag\"}")
+update=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$zone_identifier/dns_records/$record_identifier" -H "X-Auth-Email: $auth_email" -H "X-Auth-Key: $auth_key" -H "Content-Type: application/json" --data "{\"type\":\"$record_type\",\"name\":\"$record_name\",\"content\":\"$ip\",\"ttl\":120,\"proxied\":$proxied_flag}")
 #反馈更新情况
 if [ "$update" != "${update%success*}" ] && [ "$(echo $update | grep "\"success\":true")" != "" ]; then
   echo "更新成功啦!"
