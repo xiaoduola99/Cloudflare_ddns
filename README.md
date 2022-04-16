@@ -8,6 +8,7 @@ Cloudflare的动态域名解析脚本支持v4和v6
 
 2.打开命令窗口，下载脚本：
 ```shell
+yum -y install curl net-tools     #安装所需依赖
 wget https://github.com/xiaoduola99/Cloudflare_ddns/releases/download/v1.0/Cloudflare_ddns.sh
 sudo chmod 775 /home/ddns/Cloudflare_ddns.sh       #目录根据实际用户等进行更改
 ```
